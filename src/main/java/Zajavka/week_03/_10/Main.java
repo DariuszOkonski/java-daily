@@ -4,11 +4,14 @@ public class Main {
     public static void main(String[] args) {
 //        externalMethod(method1() + method2(method3() + method4()));
 
-        Cat cat1 = new Cat();
-        Cat cat2 = cat1;
+//        Cat cat1 = new Cat();
+//        Cat cat2 = cat1;
+//
+//        System.out.println(cat1 == cat2);
+//        System.out.println(cat1.equals(cat2));
 
-        System.out.println(cat1 == cat2);
-        System.out.println(cat1.equals(cat2));
+        int a = 1;
+        System.out.println(a << 3);
     }
 
     private static int method2(int number) {
