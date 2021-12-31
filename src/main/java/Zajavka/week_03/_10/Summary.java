@@ -9,6 +9,7 @@ public class Summary {
         var car = new Car();
         var car2 = new Car();
         var car3 = new Car();
+        var car4 = new Car();
 
 
     }
