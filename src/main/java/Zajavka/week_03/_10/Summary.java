@@ -1,15 +1,15 @@
 package Zajavka.week_03._10;
-
 import Zajavka.week_03._10.fajna.Car;
+
+import java.util.Arrays;
 
 public class Summary {
     public static void main(String[] args) {
 
-        Car car = new Car();
-        System.out.println(car);
+        var car = new Car();
+        var car2 = new Car();
+
 
     }
-
-
 }
 
