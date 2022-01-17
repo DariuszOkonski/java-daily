@@ -1,12 +1,9 @@
-package Zajavka.week_03._10;
+package Zajavka.week_03._11;
 
-
-public class Summary {
+public class App {
     public static void main(String[] args) {
-
 
 
 
     }
 }
-
