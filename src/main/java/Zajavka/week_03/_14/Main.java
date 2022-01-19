@@ -5,18 +5,15 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        int[][] array = new int[3][3];
+        int[][] dim2 = {
+                {1, 2, 3},
+                {1, 2, 7},
+                {4, 5, 6}
+        };
+
+        System.out.println(Arrays.deepToString(dim2));
+
+        int[][] array = new int[3][];
         System.out.println(Arrays.deepToString(array));
-
-
-        String[][] strArray = new String[3][];
-        strArray[0] = new String[2];
-        strArray[1] = new String[3];
-        strArray[2] = new String[4];
-
-        System.out.println(Arrays.deepToString(strArray));
-
-
-
     }
 }
