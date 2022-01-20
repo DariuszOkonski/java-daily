@@ -6,7 +6,12 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(3,1,32,25,12,6,7,9,3,5,6,2,5,6,8));
+        startMySorting();
+
+    }
+
+    private static void startMySorting() {
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(3,1,32,25,12,6,7,9,3,5,26,2,5,6,8));
         System.out.println(arrayList);
 
         arrayList = mySortingMethod(arrayList);
