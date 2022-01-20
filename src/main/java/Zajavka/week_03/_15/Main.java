@@ -7,15 +7,15 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(3,1,32,25,12,6,7,9,3,5,6,2,5,6,8));
-        ArrayList<Integer> sortedArrayList = new ArrayList<>();
         System.out.println(arrayList);
 
-        mySortingMethod(arrayList, sortedArrayList);
+        arrayList = mySortingMethod(arrayList);
 
-        System.out.println(sortedArrayList);
+        System.out.println(arrayList);
     }
 
-    private static void mySortingMethod(ArrayList<Integer> arrayList, ArrayList<Integer> sortedArrayList) {
+    private static ArrayList<Integer> mySortingMethod(ArrayList<Integer> arrayList) {
+        ArrayList<Integer> sortedArrayList = new ArrayList<>();
         while (arrayList.size() > 0) {
             int min = arrayList.get(0);
             for(int el: arrayList) {
@@ -26,6 +26,7 @@ public class Main {
             int minIndex = arrayList.indexOf(min);
             sortedArrayList.add(arrayList.remove(minIndex));
         }
+        return sortedArrayList;
     }
 
     private static void startBubbleSorting() {
