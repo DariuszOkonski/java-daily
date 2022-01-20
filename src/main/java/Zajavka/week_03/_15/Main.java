@@ -1,10 +1,35 @@
 package Zajavka.week_03._15;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] intArray = {3,1,2,5,2,6,7,9,3,5,6,2,5,6,8};
+
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(3,1,32,25,12,6,7,9,3,5,6,2,5,6,8));
+        ArrayList<Integer> sortedArrayList = new ArrayList<>();
+        System.out.println(arrayList);
+
+        mySortingMethod(arrayList, sortedArrayList);
+
+        System.out.println(sortedArrayList);
+    }
+
+    private static void mySortingMethod(ArrayList<Integer> arrayList, ArrayList<Integer> sortedArrayList) {
+        while (arrayList.size() > 0) {
+            int min = arrayList.get(0);
+            for(int el: arrayList) {
+                if(el < min)
+                    min = el;
+            }
+
+            int minIndex = arrayList.indexOf(min);
+            sortedArrayList.add(arrayList.remove(minIndex));
+        }
+    }
+
+    private static void startBubbleSorting() {
+        int[] intArray = {3,1,32,25,12,6,7,9,3,5,6,2,5,6,8};
         System.out.println(Arrays.toString(intArray));
         bubbleSort(intArray);
         System.out.println(Arrays.toString(intArray));
