@@ -8,6 +8,8 @@ public class App {
         int[] array = {3,2,5,1};
         printIndexOfArraysElem(array, 5);
         printIndexOfArraysElem(array, 15);
+
+
     }
 
     private static void printIndexOfArraysElem(int[] array, int element) {
