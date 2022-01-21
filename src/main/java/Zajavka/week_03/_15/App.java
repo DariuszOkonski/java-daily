@@ -9,7 +9,18 @@ public class App {
         printIndexOfArraysElem(array, 5);
         printIndexOfArraysElem(array, 15);
 
+        someMethod(1,2,3,4);
+        someMethod(1,2,3,4,5,6);
 
+    }
+
+    private static void someMethod(int... args) {
+        System.out.println(Arrays.toString(args));
+        int sum = 0;
+        for (int element: args) {
+            sum += element;
+        }
+        System.out.println("Sum: " + sum);
     }
 
     private static void printIndexOfArraysElem(int[] array, int element) {
