@@ -2,6 +2,11 @@ package Zajavka.week_04.day_18;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world1");
+
+        Building building = new Building();
+        System.out.println(building);
+
+
     }
 }
+
