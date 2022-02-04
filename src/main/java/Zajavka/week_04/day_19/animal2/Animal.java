@@ -4,7 +4,7 @@ public class Animal {
     protected String name;
     protected boolean hasLegs;
 
-    private Animal() {
+    public Animal() {
         this.name = "hello";
     }
 
