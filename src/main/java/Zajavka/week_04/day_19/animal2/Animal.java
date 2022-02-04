@@ -4,7 +4,12 @@ public class Animal {
     protected String name;
     protected boolean hasLegs;
 
-    public Animal() {
+    private Animal() {
+        this.name = "hello";
+    }
+
+    public static Animal makeAnimal() {
+        return new Animal();
     }
 
     public Animal(String name, boolean isReady) {
