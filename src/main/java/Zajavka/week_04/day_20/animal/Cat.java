@@ -4,11 +4,24 @@ import Zajavka.week_04.day_20.animal2.Animal;
 
 public class Cat extends Animal {
 
-    public void eat() {
-        System.out.println("Cat eating");
+    private String name = "tasza";
+
+    {
+        this.name = "szasz";
     }
 
-    public void catsvoice() {
-        System.out.println("cat is meowing");
+
+    public Cat() {
+    }
+
+    public Cat(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

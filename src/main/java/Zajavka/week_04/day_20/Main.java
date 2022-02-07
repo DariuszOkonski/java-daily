@@ -7,14 +7,10 @@ public class Main {
     public static void main(String[] args) {
         Animal animal = new Animal();
         Cat cat = new Cat();
-        Animal catnimal = new Cat();
+        Cat cat1 = new Cat("hello");
 
-//        animal.eat();
-//        cat.eat();
-//        cat.catsvoice();
-//
-//        catnimal.eat();
-//        ((Cat)catnimal).catsvoice();
-
+        System.out.println(animal);
+        System.out.println(cat);
+        System.out.println(cat1);
     }
 }
