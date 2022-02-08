@@ -4,16 +4,12 @@ public abstract class Animal {
     private String name;
 
     public Animal(String name) {
-        this.setName(name);
+        this.name = name;
+    }
+
+    public String getAnything() {
+        return "anything";
     }
 
     public abstract String getName();
-
-    public void setName(String name) {
-        if (name == null) {
-            this.name = "unknown";
-            return;
-        }
-        this.name = name;
-    }
 }

@@ -5,4 +5,14 @@ public abstract class Cat extends Animal {
     public Cat(String name) {
         super(name);
     }
+
+
+    public String getAnything() {
+        return "anything 2";
+    }
+
+    public String getSth() {
+        return super.getAnything();
+    }
+
 }
