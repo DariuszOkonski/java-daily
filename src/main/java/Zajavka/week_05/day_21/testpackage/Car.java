@@ -1,12 +1,18 @@
-package Zajavka.week_05.day_21;
+package Zajavka.week_05.day_21.testpackage;
 
-public class Car {
+public class Car extends Animal {
     private String brand;
     private String model;
 
     public Car(String brand, String model) {
         this.setBrand(brand);
         this.setModel(model);
+    }
+
+
+    @Override
+    void eat() {
+        super.eat();
     }
 
     public String getBrand() {
