@@ -3,9 +3,18 @@ package Zajavka.week_05.day_21;
 public abstract class Animal {
 
     private String name;
+    private int age;
 
     public Animal(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
