@@ -12,6 +12,10 @@ public class Main {
         for (Animal animal: animals) {
             runAnimal(animal);
         }
+
+        Ostrich ostrich = new Ostrich();
+        boolean isMarkerable = ostrich instanceof Markerable;
+        System.out.println(isMarkerable);
     }
 
     public static void runAnimal(Animal animal) {
