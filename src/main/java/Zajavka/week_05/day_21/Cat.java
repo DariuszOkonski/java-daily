@@ -12,7 +12,7 @@ public abstract class Cat extends Animal {
     }
 
     public String getSth() {
-        return super.getAnything();
+        return null;
     }
 
 }
