@@ -7,6 +7,11 @@ public class Cat implements Animal{
     }
 
     @Override
+    public void breathe() {
+        System.out.println("I am cat and breathe");
+    }
+
+    @Override
     public void swim() {
         System.out.println("I am cat and swimming");
     }

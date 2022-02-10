@@ -8,6 +8,11 @@ public class Ostrich implements Animal, Markerable {
     }
 
     @Override
+    public void breathe() {
+        System.out.println("I am ostrich and breathe");
+    }
+
+    @Override
     public void swim() {
         System.out.println("I am ostrich and swimming");
     }

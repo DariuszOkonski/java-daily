@@ -10,7 +10,7 @@ public class Main {
         animals.add(new Ostrich());
 
         for (Animal animal: animals) {
-            runAnimal(animal);
+            animal.live();
         }
 
         Ostrich ostrich = new Ostrich();
