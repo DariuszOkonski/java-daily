@@ -10,4 +10,9 @@ public class Cat implements Animal{
     public void swim() {
         System.out.println("I am cat and swimming");
     }
+
+    @Override
+    public void fly() {
+        System.out.println("I am cat and flying");
+    }
 }
