@@ -6,19 +6,4 @@ public class Ostrich implements Animal, Markerable {
     public void run() {
         System.out.println("I am ostrich and running");
     }
-
-    @Override
-    public void breathe() {
-        System.out.println("I am ostrich and breathe");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("I am ostrich and swimming");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("I wish I could fly");
-    }
 }

@@ -5,19 +5,4 @@ public class Cat implements Animal{
     public void run() {
         System.out.println("I am cat and running");
     }
-
-    @Override
-    public void breathe() {
-        System.out.println("I am cat and breathe");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("I am cat and swimming");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("I am cat and flying");
-    }
 }
