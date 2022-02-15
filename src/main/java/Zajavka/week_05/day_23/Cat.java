@@ -1,6 +1,6 @@
 package Zajavka.week_05.day_23;
 
-public class Cat {
+public class Cat extends Animal{
     private String name;
 
     public Cat(String name) {
@@ -9,6 +9,9 @@ public class Cat {
 
     public String getName() {
         return name;
+    }
+
+    public Cat() {
     }
 
     public void setName(String name) {
