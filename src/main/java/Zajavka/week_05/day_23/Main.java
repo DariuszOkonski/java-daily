@@ -3,15 +3,13 @@ package Zajavka.week_05.day_23;
 // 33min
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat("Stefan");
 
-        System.out.println(cat);
-        method(cat);
-        System.out.println(cat);
-    }
+        Class1 class1 = new Class1();
+        Class2 class2 = new Class2();
 
-    public static void method(Cat cat) {
-        cat = new Cat("Romus");
+        ClassImportant classImportant = new ClassImportant(class2);
+        classImportant.doSomething();
+
     }
 
 }
