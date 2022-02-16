@@ -1,5 +1,6 @@
 package Zajavka.week_05.day_23;
 
+// 33min
 public class Main {
     public static void main(String[] args) {
         Cat cat = new Cat("Stefan");
