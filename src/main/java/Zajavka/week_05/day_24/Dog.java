@@ -1,6 +1,8 @@
 package Zajavka.week_05.day_24;
 
-public class Dog {
+
+// 11min
+public class Dog extends Animal {
     private final String name;
     private final int age;
 
@@ -15,5 +17,8 @@ public class Dog {
 
     public int getAge() {
         return age;
+    }
+
+    public void changeName(final String name) {
     }
 }
