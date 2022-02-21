@@ -8,6 +8,10 @@ public class Main {
         Kangaroo kangaroo = new Kangaroo(pauch, "Romek", 12);
 
         System.out.println(kangaroo);
+        Pauch pauch1 = kangaroo.getPauch();
+        pauch1.setSize(22);
+        System.out.println(kangaroo);
+
 
         kangaroo = kangaroo
                 .withName("Daza")

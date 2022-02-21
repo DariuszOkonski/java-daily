@@ -6,7 +6,7 @@ public final class Kangaroo {
     private final int age;
 
     public Kangaroo(Pauch pauch, String name, int age) {
-        this.pauch = pauch;
+        this.pauch = new Pauch(pauch);
         this.name = name;
         this.age = age;
     }
@@ -19,10 +19,15 @@ public final class Kangaroo {
         return new Kangaroo(this.pauch, this.name, age);
     }
 
+    public Pauch getPauch() {
+        return pauch;
+    }
+
     @Override
     public String toString() {
         return "Kangaroo{" +
-                "name='" + name + '\'' +
+                "pauch=" + pauch +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
