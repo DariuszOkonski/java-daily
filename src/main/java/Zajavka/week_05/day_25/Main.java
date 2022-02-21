@@ -3,7 +3,9 @@ package Zajavka.week_05.day_25;
 public class Main {
     public static void main(String[] args) {
 
-        Kangaroo kangaroo = new Kangaroo("Romek", 12);
+        Pauch pauch = new Pauch(3);
+
+        Kangaroo kangaroo = new Kangaroo(pauch, "Romek", 12);
 
         System.out.println(kangaroo);
 
