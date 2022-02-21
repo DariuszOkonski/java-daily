@@ -5,13 +5,10 @@ public class Main {
     @Deprecated
     private String name;
 
-    // 20min
-
     public static void main(String[] args) {
 
 
-        System.gc();
-        Runtime.getRuntime().gc();
+        System.out.println("Hello");
 
 
     }
