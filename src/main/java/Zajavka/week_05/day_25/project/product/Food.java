@@ -13,4 +13,13 @@ public abstract class Food {
         this.producingMan = producingMan;
         this.consumingMan = consumingMan;
     }
+
+    @Override
+    public String toString() {
+        return  this.getClass().getName().substring(39) + "{" +
+                "name='" + name + '\'' +
+                ", producingMan=" + producingMan +
+                ", consumingMan=" + consumingMan +
+                '}';
+    }
 }

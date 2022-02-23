@@ -9,4 +9,12 @@ public abstract class Person implements ConsumingMan {
         this.name = name;
         this.surname = surname;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }
