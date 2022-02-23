@@ -1,4 +1,4 @@
-package Zajavka.week_05.day_25;
+package Zajavka.week_05.day_25.sandbox;
 
 public final class Pauch {
     private final int size;
