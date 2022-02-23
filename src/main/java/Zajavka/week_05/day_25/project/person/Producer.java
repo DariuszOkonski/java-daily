@@ -5,9 +5,9 @@ import Zajavka.week_05.day_25.project.product.Food;
 import Zajavka.week_05.day_25.project.product.Sandwich;
 import Zajavka.week_05.day_25.project.product.Soup;
 
-public class Producent extends Person implements ProducingMan{
+public class Producer extends Person implements ProducingMan{
 
-    public Producent(String name, String surname) {
+    public Producer(String name, String surname) {
         super(name, surname);
     }
 
@@ -20,11 +20,11 @@ public class Producent extends Person implements ProducingMan{
     public Food produce(String productName, ConsumingMan consumingMan) {
         switch (productName) {
             case "chocolate":
-                return new Chocolate(productName, consumingMan);
+                return new Chocolate(productName, this,  consumingMan);
             case "soup":
-                return new Soup(productName, consumingMan);
+                return new Soup(productName, this, consumingMan);
             default:
-                return new Sandwich(productName, consumingMan);
+                return new Sandwich(productName, this, consumingMan);
         }
     }
 }
