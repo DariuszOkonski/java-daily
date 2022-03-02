@@ -11,6 +11,7 @@ public class Main {
         System.out.println(v1 == v2);
         System.out.println(v1.equals(v2));
 
+
     }
 
     private static Volkswagen getV2() {
