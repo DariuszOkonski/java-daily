@@ -6,10 +6,9 @@ public class Main {
     public static void main(String[] args) {
 
         Volkswagen v1 = getV1();
-        Volkswagen v2 = getV2();
 
-        System.out.println(v1 == v2);
-        System.out.println(v1.equals(v2));
+        System.out.println(v1);
+        System.out.println(v1.isMissing());
 
 
     }
