@@ -1,31 +1,24 @@
 package Zajavka.week_06.day_26;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
-        Volkswagen volkswagen = getEnum();
+        Volkswagen v1 = getV1();
+        Volkswagen v2 = getV2();
 
-        System.out.println(volkswagen.getColors());
-        System.out.println(volkswagen.getProductionYear());
-        System.out.println(Volkswagen.PASSAT.getColors());
-        System.out.println(Volkswagen.PASSAT.getProductionYear());
+        System.out.println(v1 == v2);
+        System.out.println(v1.equals(v2));
 
-        switch (volkswagen) {
-            case PASSAT:
-            case ARTEON:
-                System.out.println("Passat or Arteon");
-                break;
-            case GOLF:
-                System.out.println("Golf");
-                break;
-            case TIGUAN:
-            case TUAREG:
-                System.out.println("Isn't that a SUV");
-                break;
+    }
 
-        }
+    private static Volkswagen getV2() {
+        return Volkswagen.TUAREG;
+    }
 
-
+    private static Volkswagen getV1() {
+        return Volkswagen.ARTEON;
     }
 
     private static Volkswagen getEnum() {
