@@ -1,11 +1,36 @@
 package Zajavka.week_06.day_26;
 
 public enum Volkswagen implements MyExampleInterface {
-    PASSAT("white", 2020),
-    GOLF("red", 2021),
-    ARTEON("green", 2018),
-    TIGUAN("blue", 2015),
-    TUAREG("brown", 2009);
+    PASSAT("white", 2020) {
+        @Override
+        public Volkswagen isMissing() {
+            return GOLF;
+        }
+    },
+    GOLF("red", 2021) {
+        @Override
+        public Volkswagen isMissing() {
+            return PASSAT;
+        }
+    },
+    ARTEON("green", 2018) {
+        @Override
+        public Volkswagen isMissing() {
+            return GOLF;
+        }
+    },
+    TIGUAN("blue", 2015) {
+        @Override
+        public Volkswagen isMissing() {
+            return TUAREG;
+        }
+    },
+    TUAREG("brown", 2009) {
+        @Override
+        public Volkswagen isMissing() {
+            return TIGUAN;
+        }
+    };
 
     private String colors;
     private int productionYear;
@@ -17,6 +42,8 @@ public enum Volkswagen implements MyExampleInterface {
         this.colors = colors;
         this.productionYear = productionYear;
     }
+
+    public abstract Volkswagen isMissing();
 
     public String getColors() {
         return colors;
