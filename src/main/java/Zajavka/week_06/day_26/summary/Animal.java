@@ -1,6 +1,6 @@
 package Zajavka.week_06.day_26.summary;
 
-public enum Animal {
+public enum Animal implements Voicable {
     REINDEER("How how"),
     SHARK("Shhhr"),
     CROCODILE("Cwap"),
@@ -14,6 +14,11 @@ public enum Animal {
     }
 
     public String getMessage() {
-        return message;
+        return this.message;
+    }
+
+    @Override
+    public String makeVoice() {
+        return this.message;
     }
 }

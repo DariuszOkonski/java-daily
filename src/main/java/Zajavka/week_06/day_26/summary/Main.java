@@ -5,10 +5,14 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        String crocHello = Animal.CROCODILE.getMessage();
+        int resolvedEnumIndex = 2;
 
-        System.out.println(crocHello);
-        System.out.println(Arrays.toString(Animal.values()));
+        int someOrdinal = Animal.CROCODILE.ordinal();
 
+        System.out.println(someOrdinal);
+
+
+        Animal animal = Animal.values()[someOrdinal];
+        System.out.println(animal);
     }
 }
