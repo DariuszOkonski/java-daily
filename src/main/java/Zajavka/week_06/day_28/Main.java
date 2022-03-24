@@ -6,17 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(Chair.LEGS_NUMBER);
+        double area = Calculator.calculateCircleArea(10);
 
-        Chair chair1 = new Chair();
-        Chair chair2 = new Chair();
-        Chair chair3 = new Chair();
+        System.out.println("Area is: " + area);
 
-        chair3.LEGS_NUMBER = 2;
-
-        System.out.println(chair3.LEGS_NUMBER);
-        System.out.println(chair2.LEGS_NUMBER);
-        System.out.println(chair1.LEGS_NUMBER);
 
     }
 }
