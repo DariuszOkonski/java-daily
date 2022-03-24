@@ -4,10 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        printMe();
+        Main main = new Main();
+        main.printMe();
+
     }
 
     public static void printMe() {
-        System.out.println("Printing me");
+        System.out.println("Printing me Main!!!");
     }
 }
