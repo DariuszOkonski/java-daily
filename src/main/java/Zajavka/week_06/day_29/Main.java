@@ -1,5 +1,7 @@
 package Zajavka.week_06.day_29;
 
+import java.io.IOException;
+
 import static Zajavka.week_06.day_29.Dog.*;
 
 public class Main {
@@ -13,6 +15,8 @@ public class Main {
 
         bark();
         eat();
+
+
     }
 
 }
