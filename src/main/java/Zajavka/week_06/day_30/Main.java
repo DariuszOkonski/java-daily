@@ -8,5 +8,6 @@ public class Main {
         Parrot parrot1 = new Parrot();
         Parrot parrot2 = new Parrot();
 
+        Doable.doSomething();
     }
 }

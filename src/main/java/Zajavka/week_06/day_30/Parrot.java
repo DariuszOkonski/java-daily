@@ -1,6 +1,6 @@
 package Zajavka.week_06.day_30;
 
-public class Parrot {
+public class Parrot implements Doable {
     private static String name;
     private String surname;
 
