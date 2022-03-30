@@ -1,13 +1,13 @@
 package Zajavka.week_06.day_30;
 
-public class Main {
+import static Zajavka.week_06.day_30.ClassForConstants.CONSTANT;
 
-    private final String CONSTANT = "Some Value";
+public class Main {
 
     public static void main(String[] args) {
 
-        ClassForConstants.CONSTANT = "Hello";
-        System.out.println(ClassForConstants.CONSTANT);
+        CONSTANT = "Hello";
+        System.out.println(CONSTANT);
     }
 
     public static String returnName() {
