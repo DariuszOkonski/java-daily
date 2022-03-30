@@ -5,9 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Parrot parrot1 = new Parrot();
-        Parrot parrot2 = new Parrot();
+        System.out.println("Hello");
 
-        Doable.doSomething();
     }
 }
