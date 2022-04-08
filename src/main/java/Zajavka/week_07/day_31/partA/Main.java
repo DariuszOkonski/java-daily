@@ -1,4 +1,4 @@
-package Zajavka.week_07.day_31;
+package Zajavka.week_07.day_31.partA;
 
 public class Main {
     public static void main(String[] args)  {
