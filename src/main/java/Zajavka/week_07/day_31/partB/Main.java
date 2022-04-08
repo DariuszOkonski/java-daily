@@ -9,7 +9,7 @@ public class Main {
 
         try {
             ryszard.setAge(17);
-        } catch (DrivingException e) {
+        } catch (DriverToYoungException e) {
             e.printStackTrace();
         } catch (Exception exception) {
             exception.printStackTrace();
