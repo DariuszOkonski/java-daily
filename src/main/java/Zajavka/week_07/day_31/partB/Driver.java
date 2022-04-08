@@ -11,7 +11,7 @@ public class Driver {
         return age;
     }
 
-    public void setAge(int age) throws DrivingException {
+    public void setAge(int age) {
         if(age < 18)
             throw new DrivingException("You can not drive when you are below 18");
         this.age = age;
