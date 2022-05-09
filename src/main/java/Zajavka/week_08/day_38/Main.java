@@ -6,20 +6,18 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
-        Set<Car> carSet = new HashSet<>();
-        Car car1 = new Car("BMW", "X1", 2020);
-        Car car2 = new Car("BMW", "X1", 2020);
-        Car car3 = new Car("BMW", "X1", 2020);
+        Set<String> set = new HashSet<>();
+        set.add("Gdansk");
+        set.add("Gdansk");
+        set.add("Zabrze");
 
-//        carSet.add(car1);
-//        carSet.add(car2);
-        carSet.add(car3);
-        System.out.println(carSet);
+        method(set);
+    }
 
-        car3.setCompany("Audi");
-        carSet.add(car3);
-
-        System.out.println(carSet);
+    private static void method(Set<String> stringSet) {
+        for (String s: stringSet) {
+            System.out.println(s);;
+        }
     }
 }
 
