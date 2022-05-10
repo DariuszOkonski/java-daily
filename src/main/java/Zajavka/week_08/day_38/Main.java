@@ -5,24 +5,18 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Set<Integer> setOfIntegers = new HashSet<>();
-        setOfIntegers.add(8);
-        setOfIntegers.add(10);
-        setOfIntegers.add(25);
-        setOfIntegers.add(7);
-        setOfIntegers.add(11);
 
-        setOfIntegers.remove(10);
+        Set<Book> bookSet = new HashSet<>();
+        Book ogniem_i_java = new Book("Ogniem i Java");
+        System.out.println(ogniem_i_java.hashCode());
 
-        System.out.println(setOfIntegers);
-        System.out.println("---");
-        System.out.println(setOfIntegers.contains(8));
-        System.out.println(setOfIntegers.isEmpty());
-        System.out.println("---");
+        bookSet.add(ogniem_i_java);
+        ogniem_i_java.setTitle("Ogniem");
+        System.out.println(ogniem_i_java.hashCode());
+        bookSet.add(ogniem_i_java);
 
-        for (Integer item: setOfIntegers) {
-            System.out.println(item);
-        }
+
+        System.out.println(bookSet);
     }
 }
 
