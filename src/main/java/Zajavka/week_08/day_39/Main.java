@@ -1,7 +1,9 @@
 package Zajavka.week_08.day_39;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,12 +14,13 @@ public class Main {
         people.put(2, "Rafal Bernadynski");
         people.put(3, "Cecylia Celibat");
 
-        System.out.println(people);
+        Set<Map.Entry<Integer, String>> entries = people.entrySet();
+        Set<Integer> keysets = people.keySet();
+        Collection<String> values = people.values();
 
-
-        System.out.println("Get key: " + people.get(5));
-        System.out.println("Get key: " + people.get(2));
-
+        System.out.println(entries);
+        System.out.println(keysets);
+        System.out.println(values);
 
 
     }
