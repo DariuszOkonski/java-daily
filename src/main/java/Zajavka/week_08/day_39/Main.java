@@ -12,9 +12,9 @@ public class Main {
         warsawAttractions.add("Metro Politechnika");
         citiesAttractions.put("Warsaw", warsawAttractions);
 
-        citiesAttractions.put("Gdynia", Arrays.asList("Galeria Handlowa Galera", "Tramwaj nr 1"));
         citiesAttractions.put("London", List.of("London's Eye", "Buckingham Palace"));
 
         System.out.println(citiesAttractions);
+        System.out.println(citiesAttractions.get("Warsaw"));
     }
 }
