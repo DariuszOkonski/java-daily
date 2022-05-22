@@ -15,6 +15,9 @@ public class Main {
         citiesAttractions.put("London", List.of("London's Eye", "Buckingham Palace"));
 
         System.out.println(citiesAttractions);
-        System.out.println(citiesAttractions.get("Warsaw"));
+
+        Set<Map.Entry<String, List<String>>> citiesAttractionsEntries = citiesAttractions.entrySet();
+
+        System.out.println(citiesAttractions);
     }
 }
