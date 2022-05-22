@@ -14,10 +14,28 @@ public class Main {
 
         citiesAttractions.put("London", List.of("London's Eye", "Buckingham Palace"));
 
-        System.out.println(citiesAttractions);
 
         Set<Map.Entry<String, List<String>>> citiesAttractionsEntries = citiesAttractions.entrySet();
 
         System.out.println(citiesAttractions);
+        System.out.println(citiesAttractionsEntries);
+
+        for (Map.Entry<String, List<String>> citiesAttractionsEntry : citiesAttractionsEntries) {
+            System.out.println(citiesAttractionsEntry.getKey());
+            System.out.println(citiesAttractionsEntry.getValue());
+        }
+
+        System.out.println("=========");
+        Set<String> citiesAttractionsKeys = citiesAttractions.keySet();
+        System.out.println(citiesAttractionsKeys);
+
+        System.out.println("==============");
+        Collection<List<String>> citiesAttractionsValues = citiesAttractions.values();
+        System.out.println(citiesAttractionsValues);
+        for (List<String> citiesAttractionsValue : citiesAttractionsValues) {
+            for (String s : citiesAttractionsValue) {
+                System.out.println(s);
+            }
+        }
     }
 }
