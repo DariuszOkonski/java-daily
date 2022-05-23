@@ -7,7 +7,7 @@ public final class Cat {
     private final List<String> friendsNames;
 
     public Cat(List<String> friendsNames) {
-        this.friendsNames = friendsNames;
+        this.friendsNames = new ArrayList<>(friendsNames);
     }
 
     public List<String> getFriendsNames() {
