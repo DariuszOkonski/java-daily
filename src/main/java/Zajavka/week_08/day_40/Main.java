@@ -8,6 +8,14 @@ import java.util.ListIterator;
 public class Main {
 
     public static void main(String[] args) {
+        List<String> namesList = new ArrayList<>();
+        namesList.add("Bartek");
+        namesList.add("Karol");
+
+        for (String s : namesList) {
+            System.out.println(s);
+        }
+
 
     }
 }
