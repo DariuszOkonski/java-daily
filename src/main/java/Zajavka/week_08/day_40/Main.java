@@ -6,15 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Map<String, String> map = new HashMap<>();
-        map.put("one", "Bartek");
-        map.put("zero", "Karol");
+        String[] namesArray = {"One", "Two", "Three", "Four"};
+        List<String> namesList = new ArrayList<>(Arrays.asList(namesArray));
 
-        Set<Map.Entry<String, String>> entries = map.entrySet();
-        Iterator<Map.Entry<String, String>> iterator = entries.iterator();
+        String[] strings = namesList.toArray(new String[0]);
+        System.out.println(Arrays.toString(strings));
 
-        for (Map.Entry<String, String> entry : entries) {
-            System.out.println(entry);
-        }
     }
 }
