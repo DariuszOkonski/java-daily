@@ -12,8 +12,9 @@ public class Main {
         namesList.add("Bartek");
         namesList.add("Karol");
 
-        for (String s : namesList) {
-            System.out.println(s);
+        Iterator<String> namesIterator = namesList.iterator();
+        while (namesIterator.hasNext()) {
+            System.out.println(namesIterator.next());
         }
 
 
