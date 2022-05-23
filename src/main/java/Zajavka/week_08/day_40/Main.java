@@ -6,11 +6,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] namesArray = {"One", "Two", "Three", "Four"};
-        List<String> namesList = new ArrayList<>(Arrays.asList(namesArray));
+        List<String> namesList = new ArrayList<>();
+        namesList.add("Czarek");
+        namesList.add("Marek");
+        namesList.add("Darek");
 
-        String[] strings = namesList.toArray(new String[0]);
-        System.out.println(Arrays.toString(strings));
+        Cat cat = new Cat(namesList);
+        System.out.println(cat.getFriendsNames());
 
+        cat.getFriendsNames().add("Jarek");
+        System.out.println(cat.getFriendsNames());
     }
 }
