@@ -6,15 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<String> namesList = new ArrayList<>();
-        namesList.add("Czarek");
-        namesList.add("Marek");
-        namesList.add("Darek");
 
-        Cat cat = new Cat(namesList);
-        System.out.println(cat.getFriendsNames());
-
-        cat.getFriendsNames().add("Jarek");
-        System.out.println(cat.getFriendsNames());
     }
 }
